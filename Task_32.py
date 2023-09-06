@@ -13,7 +13,7 @@ def input_min_max():
     return min, max
 
 def rnd_list(): return [randint(1,10) for i in range(1, 10)]
-def find_min_to_max(list, min, max): return [x for x in list if min <= x <= max]
+def find_min_to_max(list, min, max): return [i for i in range(len(list)) if min <= list[i] <= max]
 
 list_rnd = rnd_list()
 min, max = input_min_max()
