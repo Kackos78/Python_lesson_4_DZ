@@ -8,8 +8,10 @@ def input_nums():
     return a1, n, d
 
 def func(a1, n, d): return [(a1 + (i) * d) for i in range(0,n)]
+
 a1, n, d = input_nums()
 print(func(a1, n, d))
+
 print([(a1 + (i) * d) for i in range(0, n)]) # или так
 
 
